@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-[#212121CC] py-[10px] px-[20px] fixed w-[100%] top[0] z-10">
+        <div class="container mx-auto flex items-center justify-between">
+            <a class="" href="./index.html"><img src="./image/logo.png" alt=""></a>
+            <ul class="hidden sm:flex items-center gap-[30px]">
+                <li>
+                    <a class="text-[white] hover:text-[black]" href="./page/catalog.html">Catalog</a>
+                </li>
+                <li>
+                    <a class="text-[white] hover:text-[black]" href="./page/catalog1.html">Catalog1</a>
+                </li>
+                <li>
+                    <a class="text-[white] hover:text-[black]" href="./page/product.html">Product</a>
+                </li>
+                <li>
+                    <a class="text-[white] hover:text-[black]" href="./page/map.html">Map</a>
+                </li>
+                <li>
+                    <a class="text-[white] hover:text-[black]" href="./page/service.html">Service</a>
+                </li>
+                <li>
+                    <a class="text-[white] hover:text-[black]" href="./page/backed.html">Backed</a>
+                </li>
+            </ul>
+            <img class="w-[30px] h-[25px] sm:hidden "
+                src="data:image/png;base64,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"
+                alt="">
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-screen bg-cover bg-center flex items-center" style="background-image: url('image/bg-img.png');">
+        
+            <div class="container mx-auto px-6 text-white max-w-lg">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                    Исключительное качество <br> без компромиссов
+                </h1>
+                <p class="mb-6 text-lg">
+                    Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                </p>
+                <a href="#"
+                    class="inline-block border-2 border-red-600 text-white px-6 py-2 rounded-full hover:bg-red-600 transition">
+                    ПОДРОБНЕЕ
+                </a>
+            </div>
+        
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 transform hover:scale-140 transition">
+                <img src="./image/left-arrow.png" alt="prev" class="w-10 h-10">
+            </button>
+
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 transform hover:scale-140 transition">
+                <img src="./image/right-arrow.png" alt="next" class="w-10 h-10">
+            </button>
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-4">
+                <span class="w-7 h-7 bg-white/50 rounded-full text-white cursor-pointer pl-[9px] hover:text-black hover:bg-white">1</span>
+                <span class="w-7 h-7 bg-white/50 rounded-full text-white cursor-pointer pl-[9px] hover:text-black hover:bg-white">2</span>
+                <span class="w-7 h-7 bg-white/50 rounded-full text-white cursor-pointer pl-[9px] hover:text-black hover:bg-white">3</span>
+                <span class="w-7 h-7 bg-white/50 rounded-full text-white cursor-pointer pl-[9px] hover:text-black hover:bg-white">4</span>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="bg-[#2d2d2d] text-white mt-[400px]">
+        <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+                    <img src="./image/logo.png" alt="">
+                </div>
+                <p class="text-sm mb-4">легендарные ножи,<br> создающие шедевры</p>
+                <p class="text-sm pt-[30px]">
+                    Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей, изготовленных
+                    лучшими мастерами Восточной Азии с применением передового европейского оборудования и современных
+                    материалов.
+                </p>
+                <p class="text-sm mt-2 pt-[50px]">
+                    Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые традиции и новейшие
+                    разработки.
+                    Также предлагаем широкий ассортимент сопутствующих товаров.
+                </p>
+            </div>
+    
+            <div>
+                <div class="mb-6">
+                    <h3 class="font-semibold mb-3">Информация</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Главная</a></li>
+                        <li><a href="#" class="hover:underline">Новости</a></li>
+                        <li><a href="#" class="hover:underline">О компании</a></li>
+                        <li><a href="#" class="hover:underline">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h3 class="font-semibold mb-3">Каталог</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:underline">Кухонные ножи</a></li>
+                        <li><a href="#" class="hover:underline">Складные ножи</a></li>
+                        <li><a href="#" class="hover:underline">Точилки для ножей</a></li>
+                        <li><a href="#" class="hover:underline">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3">Мы в соцсетях</h3>
+                    <div class="flex space-x-4 text-lg">
+                        <a href="https://www.facebook.com/" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://vk.com/" class="hover:text-gray-300"><i class="fab fa-vk"></i></a>
+                        <a href="https://www.instagram.com/" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="https://web.telegram.org/a/" class="hover:text-gray-300"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.youtube.com/" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <h3 class="font-semibold mb-3">Контактная информация</h3>
+                <p class="text-sm mb-2 pt-[23px]"><span class="font-bold">+7 (981) 120-11-17</span></p>
+                <p class="text-sm mb-2 pt-[9px]">tuotown@mail.ru</p>
+                <p class="text-sm mb-2 pt-[18px]">08:00 — 18:00, ежедневно</p>
+                <p class="text-sm mb-6 pt-[30px]">Россия, Москва, МКАД, 19-й километр,<br>вл20с1, вход Ф, 22-68-70</p>
+                
+                <img src="./image/footer-img.png" alt="map" class="w-32 pt-[30px]">
+            </div>
+        </div>
+    
+        
+        <div class="bg-[#252525] py-4">
+            <div
+                class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 text-center md:text-left">
+                <p class="mb-2 md:mb-0">
+                    TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат
+                    правообладателям.
+                </p>
+                <p>ТЕКАРА разработка и поддержка</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
